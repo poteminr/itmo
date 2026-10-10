@@ -1,0 +1,11 @@
+{
+  "python": "3.12.15",
+  "torch": "2.11.0+cu130",
+  "torchvision": "0.26.0+cu130",
+  "numpy": "2.4.4",
+  "matplotlib": "3.11.0",
+  "cuda": "13.0",
+  "cudnn": 91900,
+  "gpu": "NVIDIA L4",
+  "platform": "Linux-6.8.0-1066-gcp-x86_64-with-glibc2.35"
+}

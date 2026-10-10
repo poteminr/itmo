@@ -1,0 +1,62 @@
+{
+  "target_accuracy": 0.9,
+  "evaluation_every_updates": 100,
+  "super": {
+    "source": "../gcp-l4-table6-2000-20261010/paper",
+    "first_observed_target": {
+      "step": 2000,
+      "examples_seen": 2000000,
+      "lr": 0.10289999999999969,
+      "train_loss": 0.03395153032615781,
+      "train_accuracy": 0.98996,
+      "train_interval_examples": 100000,
+      "train_seconds": 708.0710497240015,
+      "test_loss": 0.3421284736633301,
+      "test_accuracy": 0.909,
+      "test_examples": 10000
+    },
+    "final": {
+      "step": 2000,
+      "examples_seen": 2000000,
+      "lr": 0.10289999999999969,
+      "train_loss": 0.03395153032615781,
+      "train_accuracy": 0.98996,
+      "train_interval_examples": 100000,
+      "train_seconds": 708.0710497240015,
+      "test_loss": 0.3421284736633301,
+      "test_accuracy": 0.909,
+      "test_examples": 10000
+    }
+  },
+  "step": {
+    "source": "step",
+    "first_observed_target": null,
+    "final": {
+      "step": 4000,
+      "examples_seen": 4000000,
+      "lr": 0.0010000000000000002,
+      "train_loss": 0.009987912439391948,
+      "train_accuracy": 0.99956,
+      "train_interval_examples": 100000,
+      "train_seconds": 1433.5442098259969,
+      "test_loss": 0.6996895175933838,
+      "test_accuracy": 0.8393,
+      "test_examples": 10000
+    }
+  },
+  "observed_update_ratio_step_over_super": null,
+  "observed_training_time_ratio_step_over_super": null,
+  "timing_scope": "Cumulative synchronized training-step time, excluding separate evaluations, saving and VM setup",
+  "setup": {
+    "runs_per_method": 1,
+    "seed": 0,
+    "clr_steps": 2000,
+    "step_lr_steps": 4000,
+    "clr_reference": "Table 6, full 50000-image training set",
+    "step_lr_schedule": "Shortened step schedule: 0.1, 0.01 after 2000, 0.001 after 3000",
+    "shared_bn_fraction": 0.8,
+    "shared_weight_decay": 0.0001,
+    "threshold_selection": "After observing CLR, before starting step LR",
+    "evaluation": "All 10000 test images every 100 steps"
+  }
+}

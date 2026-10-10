@@ -1,0 +1,3 @@
+name,seed,status,split,step,accuracy_pct,best_accuracy_pct,train_seconds
+table6-super-2000,0,completed,test,2000,90.9,90.9,708.0710497240015
+matched-step-4000,0,completed,test,4000,83.93,84.05,1433.5442098259969
