@@ -1,0 +1,357 @@
+{
+  "schema_version": 1,
+  "latency": {
+    "overhead_s": 0.0006150565715339648,
+    "compute_flops_per_s": 38449551273581.0,
+    "bandwidth_bytes_per_s": 55916262746.35081
+  },
+  "energy": {
+    "offset_j": 0.019712949754573952,
+    "base_power_w": 0.0,
+    "joules_per_flop": 0.0,
+    "joules_per_byte": 1.0263825260365749e-09,
+    "latency": {
+      "overhead_s": 0.0006150565715339648,
+      "compute_flops_per_s": 38449551273581.0,
+      "bandwidth_bytes_per_s": 55916262746.35081
+    }
+  },
+  "fit": {
+    "calibration_points": [
+      [
+        32,
+        1
+      ],
+      [
+        32,
+        2
+      ],
+      [
+        32,
+        4
+      ],
+      [
+        32,
+        8
+      ],
+      [
+        32,
+        16
+      ],
+      [
+        32,
+        32
+      ],
+      [
+        32,
+        64
+      ],
+      [
+        32,
+        128
+      ],
+      [
+        32,
+        256
+      ],
+      [
+        64,
+        1
+      ],
+      [
+        64,
+        2
+      ],
+      [
+        64,
+        4
+      ],
+      [
+        64,
+        8
+      ],
+      [
+        64,
+        16
+      ],
+      [
+        64,
+        32
+      ],
+      [
+        64,
+        64
+      ],
+      [
+        64,
+        128
+      ],
+      [
+        64,
+        256
+      ],
+      [
+        128,
+        1
+      ],
+      [
+        128,
+        2
+      ],
+      [
+        128,
+        4
+      ],
+      [
+        128,
+        8
+      ],
+      [
+        128,
+        16
+      ],
+      [
+        128,
+        32
+      ],
+      [
+        128,
+        64
+      ],
+      [
+        128,
+        128
+      ],
+      [
+        128,
+        256
+      ],
+      [
+        224,
+        1
+      ],
+      [
+        224,
+        2
+      ],
+      [
+        224,
+        4
+      ],
+      [
+        224,
+        8
+      ],
+      [
+        224,
+        16
+      ],
+      [
+        224,
+        32
+      ],
+      [
+        224,
+        64
+      ],
+      [
+        224,
+        128
+      ],
+      [
+        224,
+        256
+      ],
+      [
+        256,
+        1
+      ],
+      [
+        256,
+        2
+      ],
+      [
+        256,
+        4
+      ],
+      [
+        256,
+        8
+      ],
+      [
+        256,
+        16
+      ],
+      [
+        256,
+        32
+      ],
+      [
+        256,
+        64
+      ],
+      [
+        256,
+        128
+      ],
+      [
+        256,
+        256
+      ],
+      [
+        384,
+        1
+      ],
+      [
+        384,
+        2
+      ],
+      [
+        384,
+        4
+      ],
+      [
+        384,
+        8
+      ],
+      [
+        384,
+        16
+      ],
+      [
+        384,
+        32
+      ],
+      [
+        384,
+        64
+      ],
+      [
+        384,
+        128
+      ],
+      [
+        384,
+        256
+      ],
+      [
+        512,
+        1
+      ],
+      [
+        512,
+        2
+      ],
+      [
+        512,
+        4
+      ],
+      [
+        512,
+        8
+      ],
+      [
+        512,
+        16
+      ],
+      [
+        512,
+        32
+      ],
+      [
+        512,
+        64
+      ],
+      [
+        512,
+        128
+      ],
+      [
+        512,
+        256
+      ]
+    ],
+    "latency_objective": "squared log error; 9 fixed starts; training only",
+    "energy_objective": "squared relative error; nonnegative coefficients; training only",
+    "energy_feature_rank": 3,
+    "energy_feature_count": 4,
+    "energy_condition_number": 1.6629416272408878e+16,
+    "latency_at_bound": false,
+    "energy_parameters_are_effective": true
+  },
+  "metrics": {
+    "calibration": {
+      "latency": {
+        "n": 63,
+        "mape_percent": 17.76342057397148,
+        "median_ape_percent": 18.448058320685323,
+        "p95_ape_percent": 33.26685606863087,
+        "rmse": 0.019125174017247688
+      },
+      "memory": {
+        "n": 63,
+        "mape_percent": 41.62794390008608,
+        "median_ape_percent": 34.33765547691039,
+        "p95_ape_percent": 78.75112537266503,
+        "rmse": 281891007.9552627
+      },
+      "energy": {
+        "n": 63,
+        "mape_percent": 16.395530206111406,
+        "median_ape_percent": 12.31887518092928,
+        "p95_ape_percent": 35.59889463214828,
+        "rmse": 1.9518909908847815
+      },
+      "flops": {
+        "n": 63,
+        "mape_percent": 0.0,
+        "median_ape_percent": 0.0,
+        "p95_ape_percent": 0.0,
+        "rmse": 0.0
+      }
+    },
+    "validation": {
+      "latency": {
+        "n": 69,
+        "mape_percent": 20.44023135679885,
+        "median_ape_percent": 20.742293251872383,
+        "p95_ape_percent": 35.13967151252142,
+        "rmse": 0.03611916211151461
+      },
+      "memory": {
+        "n": 69,
+        "mape_percent": 35.35152293252077,
+        "median_ape_percent": 30.503764419440245,
+        "p95_ape_percent": 69.64217462804898,
+        "rmse": 486835287.81816053
+      },
+      "energy": {
+        "n": 69,
+        "mape_percent": 19.51235345496368,
+        "median_ape_percent": 15.441337610728256,
+        "p95_ape_percent": 42.30951349770965,
+        "rmse": 3.5077145370147664
+      },
+      "flops": {
+        "n": 69,
+        "mape_percent": 0.0,
+        "median_ape_percent": 0.0,
+        "p95_ape_percent": 0.0,
+        "rmse": 0.0
+      }
+    }
+  },
+  "provenance": {
+    "measurements_sha256": "ea9d66cf7b8231d3aac6981dc229365ac4600f7964e5788da8e3d28ba79ad52b",
+    "benchmark_source_hashes": {
+      "models.py": "465bb14ffa5f90258673adf0546ac40eea1edf595d700a41cdc3715429f90bc9",
+      "equations.py": "52d252920cb646838ee0c52beab94b9d62c284df2ddd11c026a876c40bd1eb65",
+      "grid.py": "04676442af06ba616956d9c19389098ba989bced57b65e1e143af403e0847385",
+      "measure.py": "cf89ee923e4041653daea6811105a7dc6f52d024ec159b4c77e2b6ce7f3a9133",
+      "telemetry.py": "6564c03d50ad0a49d837f9949659b83c44e6fd315e6082a9949df19a84816071",
+      "artifacts.py": "a739c30f5728a03a1406ea4ba0795585e2332de1369d95091a4b3c08c639a794"
+    },
+    "gpu": "Tesla T4",
+    "calibrate_sha256": "47e8daa01fc4687e1f658131250a57d2c45b081bb92d19214e4dea0e055ffd4a"
+  }
+}
